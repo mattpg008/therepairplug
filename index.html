@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>The Repair Plug | St. Louis Handyman Services</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="section-container header-container">
+			<div class="logo">The Repair Plug</div>
+			<div class="tagline">Fast. Fair. Done right.</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero-section section-container">
+			<h2>Handyman services that actually show up.</h2>
+			<p>Small jobs, big fixes, and everything in between—book a time that works for you.</p>
+			<a class="cta-button" id="heroBook" href="https://calendar.app.google/kPyQrE8NULF7gWCo8" target="_blank" rel="noopener">Book an Appointment</a>
+		</section>
+
+		<section class="pulse-section section-container">
+			<div class="pulse-grid">
+				<article><strong data-count="17">0</strong><span>Customers Served This Week</span></article>
+				<article><strong data-count="6">0</strong><span>Active Projects</span></article>
+				<article><strong data-count="4">0</strong><span>Open Appointment Slots</span></article>
+				<article><strong id="liveJobs">Drywall Repair</strong><span>Latest Job Completed</span></article>
+			</div>
+		</section>
+
+		<section class="services section section-container" id="services">
+			<div class="section-heading">
+				<p class="eyebrow">What We Fix</p>
+				<h2>3D Tools. Real Work.</h2>
+			</div>
+
+			<div class="service-grid">
+				<article>
+					<span class="tool-3d drill"></span>
+					<h3>TV Mounting</h3>
+					<p>Clean, level installs with wires managed and the room reset.</p>
+				</article>
+
+				<article>
+					<span class="tool"></span>
+					<h3>Toilet Replacement</h3>
+					<p>Replace broken toilets and reseal for leak-free performance.</p>
+				</article>
+
+				<article>
+					<span class="tool"></span>
+					<h3>Drywall Repair</h3>
+					<p>Patches, sanding, and paint-ready finishes.</p>
+				</article>
+			</div>
+
+			<div class="price-grid">
+				<article><span>TV Mounting</span><strong>$150–300</strong></article>
+				<article><span>Toilet Replacement</span><strong>$150–250</strong></article>
+				<article><span>Disposal Install</span><strong>$125–175</strong></article>
+				<article><span>Drywall Repair</span><strong>$100–250</strong></article>
+				<article><span>Door Repair</span><strong>$75–150</strong></article>
+			</div>
+		</section>
+
+		<section class="job-wall section section-container">
+			<div class="section-heading">
+				<p class="eyebrow">Recent Jobs Completed</p>
+				<h2>Customer Wall.</h2>
+			</div>
+
+			<div class="job-ticker" aria-live="polite">
+				<span>Drywall Repair</span>
+				<span>Door Repair</span>
+				<span>Faucet Install</span>
+				<span>Toilet Replacement</span>
+				<span>Furniture Assembly</span>
+				<div class="calendar-card">
+					<span>Google Calendar Ready</span>
+					<strong>Want customers to pick a time?</strong>
+					<p>Create a Google Calendar appointment schedule, then share the booking page link.</p>
+					<a class="button ghost" id="googleCalendarLink" href="https://calendar.app.google/kPyQrE8NULF7gWCo8" target="_blank" rel="noopener">OPEN GOOGLE BOOKING</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="contact-section section-container" id="contact">
+			<div class="section-heading">
+				<p class="eyebrow">Get a Quote</p>
+				<h2>Quick estimate</h2>
+			</div>
+
+			<form id="quoteForm" class="quote-form">
+				<label>Service
+					<select id="serviceType">
+						<option value="150">TV Mounting</option>
+						<option value="150">Toilet Replacement</option>
+						<option value="100">Drywall Repair</option>
+					</select>
+				</label>
+
+				<label>Urgency
+					<select id="urgency">
+						<option value="1">Standard</option>
+						<option value="1.4">Urgent</option>
+					</select>
+				</label>
+
+				<label>Project Size
+					<select id="projectSize">
+						<option value="1">Small</option>
+						<option value="1.5">Medium</option>
+						<option value="2">Large</option>
+					</select>
+				</label>
+
+				<div id="quoteOutput">$0-$0</div>
+				<a id="quoteTextLink" href="#" class="button">Text this quote</a>
+			</form>
+
+			<form id="bookingForm" class="booking-form">
+				<label>Name <input id="customerName" type="text" /></label>
+				<label>Phone <input id="customerPhone" type="tel" /></label>
+				<label>ZIP <input id="customerZip" type="text" /></label>
+				<label>Service
+					<select id="bookingService">
+						<option>TV Mounting</option>
+						<option>Toilet Replacement</option>
+						<option>Drywall Repair</option>
+					</select>
+				</label>
+				<label>Preferred Time <input id="preferredTime" type="text" /></label>
+				<label>Details <textarea id="jobDetails"></textarea></label>
+
+				<a id="bookingTextLink" class="button" href="#">Prepare booking text</a>
+				<a id="calendarBookingLink" class="button" href="https://calendar.app.google/kPyQrE8NULF7gWCo8" target="_blank" rel="noopener">Open Booking Calendar</a>
+			</form>
+		</section>
+	</main>
+
+	<footer class="main-footer">
+		<div class="section-container">© The Repair Plug — St. Louis</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
