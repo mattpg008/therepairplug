@@ -39,11 +39,41 @@ body {
     radial-gradient(circle at 18% 30%, rgba(167, 15, 23, 0.2), transparent 34%),
     linear-gradient(145deg, #050607 0%, #151a1f 45%, #090a0c 100%);
   color: var(--chrome);
-  cursor: none;
   font-family: var(--body);
   margin: 0;
   overflow-x: hidden;
   position: relative;
+}
+
+.cursor-tool,
+#sparks,
+.smoke {
+  pointer-events: none;
+}
+
+.cursor-tool {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(242, 244, 243, 0.22);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+#sparks,
+.smoke {
+  inset: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+a,
+.button {
+  cursor: pointer;
 }
 
 body::before {
